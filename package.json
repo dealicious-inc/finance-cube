@@ -1,0 +1,110 @@
+{
+  "name": "react-ag-grid-template",
+  "description": "React AG Grid 템플릿",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "local": "vite --mode localhost",
+    "dev": "vite --mode dev",
+    "prod": "vite --mode prod",
+    "stage": "vite --mode stage",
+    "qa": "vite --mode qa",
+    "build:dev": "tsc && vite build --mode dev",
+    "build:prod": "tsc && vite build --mode prod",
+    "build:stage": "tsc && vite build --mode stage",
+    "build:qa": "tsc && vite build --mode qa",
+    "lint": "eslint . --fix --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "prepare": "husky",
+    "postinstall": "husky",
+    "cz": "cz"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.0",
+    "@fontsource/roboto": "^5.0.12",
+    "@hookform/resolvers": "^3.3.4",
+    "@mui/icons-material": "^5.15.12",
+    "@mui/material": "^5.15.12",
+    "@mui/styles": "^5.15.12",
+    "@mui/system": "^5.15.12",
+    "@mui/utils": "^5.15.12",
+    "@mui/x-charts": "^6.19.5",
+    "@tanstack/react-query": "^4.36.1",
+    "ag-grid-community": "^29.3.5",
+    "ag-grid-enterprise": "^29.3.5",
+    "ag-grid-react": "^29.3.5",
+    "axios": "^1.6.7",
+    "clsx": "^2.1.0",
+    "date-fns": "^3.3.1",
+    "immer": "^9.0.21",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.51.0",
+    "react-router-dom": "^6.22.2",
+    "yup": "^1.3.3",
+    "zustand": "^4.5.2"
+  },
+  "devDependencies": {
+    "@digitalroute/cz-conventional-changelog-for-jira": "^8.0.1",
+    "@types/eslint": "^8",
+    "@types/react": "^18.2.61",
+    "@types/react-dom": "^18.2.19",
+    "@typescript-eslint/eslint-plugin": "^7.1.1",
+    "@typescript-eslint/parser": "^7.1.1",
+    "@vitejs/plugin-react-swc": "^3.6.0",
+    "commitizen": "^4.3.0",
+    "eslint": "^8.57.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-react": "^7.34.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "prettier": "^3.2.5",
+    "typescript": "^5.3.3",
+    "vite": "^5.1.5"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "prettier --cache --write",
+      "eslint --cache --fix --max-warnings=0"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "@digitalroute/cz-conventional-changelog-for-jira",
+      "disableScopeLowerCase": true,
+      "disableSubjectLowerCase": true
+    }
+  },
+  "dependenciesMeta": {
+    "@digitalroute/cz-conventional-changelog-for-jira": {
+      "unplugged": true
+    }
+  },
+  "packageManager": "yarn@4.1.1"
+}
